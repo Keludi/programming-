@@ -1,0 +1,75 @@
+/*chapter 2 : demonstrate each topic
+The topics are
+1.identifiers 
+2.comment 
+3.variable
+4.variable declaration 
+5.basic data type
+6.Character and number
+7.constants
+8.input/ output 
+9.operators 
+10.Arithmetic operator
+11.Relational operator
+12.Bitwise  operator
+13.Logical operator
+14.Increment operator
+15.Decrement operator
+16.Precedence  operator
+17.implicit type conversation 
+18.explicit  type conversation*/
+
+#include<iostream> 
+using namespace std; 
+
+int main() 
+{ 
+//variables can be declared with identifier
+int number;//here we are declaring an variable called number with integer datatype 
+//the basic data type are as follows 
+int num; 
+float num1; 
+double num2; 
+char ch; 
+bool b; 
+ //character are represented in the form(type) string or char 
+//here is simple example
+ char letter='j';//notice that char only contain one single character this can be changed using an array of character 
+string name="khalid" ;
+//as for number in c++ they are represented in three ways, int(Integer), float, double 
+//int is used for integer values 
+int number1=345; 
+//as for decimal values they can be stored using float & double 
+float dec=569.456;// used for small decimal values 
+double dec1=456.687994;
+// used for larger decimal point values 
+//constant can be declared in two ways, #define & const 
+const double pi=3.14;
+// input/output is written using insertion opreator '<<' for output & '>>' for input 
+string name1; 
+cout<<"Enter your name please"<<endl;
+cin>>name1; 
+cout<<"Hello "<<name<<" learning C++ is exciting"<<endl; 
+//operators
+int x=97, y=41; 
+// arthmetic operator 
+int  a=x+y; 
+int s=x-y; 
+int d=x/y; 
+int m=x*y;  
+//relational operator 
+bool t=x>y; 
+//bitwise operator 
+int  w=x&y; 
+//logical operator 
+int n=x||y; 
+//increment x++; 
+//decrement y--; 
+double num3=34.98;
+int imp; 
+imp=num3;
+cout<<"This is implicit type of conversion "<<endl<<"original value: "<<num3<<endl<<"converted value: "<<imp<<endl; 
+//explicit type of conversion
+ int prod = static_cast<int>(num3*x);
+ cout<< "Product of "<< x<<" and"<<num3<<":  "<< prod;
+  }
