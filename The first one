@@ -1,0 +1,47 @@
+// chapter 2: exercise from the slide
+
+//Question number 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num1, num2, sum, diff, prod;
+	float div;
+
+	// Accept user input for two integers
+	cout << "Enter the first integer: ";
+	cin >> num1;
+	cout << "Enter the second integer: ";
+	cin >> num2;
+
+	// Calculate the sum, difference, product, and division of the two integers
+	sum = num1 + num2;
+	diff = num1 - num2;
+	prod = num1 * num2;
+	div = (float)num1 / num2;
+
+	// Determine the greater and smaller number
+	int greater, smaller;
+	if (num1 > num2)
+	{
+		greater = num1;
+		smaller = num2;
+	}
+	else
+	{
+		greater = num2;
+		smaller = num1;
+	}
+
+	// Display the results to the user
+	cout << "Sum: " << sum << endl;
+	cout << "Difference: " << diff << endl;
+	cout << "Product: " << prod << endl;
+	cout << "Division: " << div << endl;
+	cout << "Greater number: " << greater << endl;
+	cout << "Smaller number: " << smaller << endl;
+
+	return 0;
+}
+

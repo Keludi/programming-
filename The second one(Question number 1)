@@ -1,0 +1,57 @@
+//chapter 2 Exercise from the slide
+
+1) 
+
+● To state that a program calculates the product of three integers and declare the variables:
+
+// This program calculates the product of three integers. 
+#include <iostream>
+ using namespace std;
+ int main()
+ { int x, y, z, result; // rest of the code goes here
+ return 0; 
+}
+
+● To prompt the user to enter three integers:
+cpp
+Copy code
+cout << "Please enter three integers: ";
+
+ ● To read three integers from the keyboard and store them in the variables x, y, and z:
+
+Scanner scanner = new Scanner(System.in);
+ x = scanner.nextInt(); 
+y = scanner.nextInt(); 
+z = scanner.nextInt(); 
+
+●  To compute the product of the three integers contained in variables x, y, and z, and assign the result to the variable result:
+
+result = x * y * z;
+
+● To print "The product is " followed by the value of the variable result:
+
+
+System.out.println("The product is " + result);
+
+● To return a value from main indicating that the program terminated successfully:
+
+
+return 0;
+
+
+●  Putting it all together:
+
+
+// This program calculates the product of three integers.
+ import java.util.Scanner; 
+public class Main { 
+public static void main(String[] args) {
+ int x, y, z, result; System.out.println("Please enter three integers: ");
+ Scanner scanner = new Scanner(System.in); 
+x = scanner.nextInt(); 
+y = scanner.nextInt(); 
+z = scanner.nextInt(); 
+result = x * y * z; 
+System.out.println("The product is " + result); 
+}
+ }

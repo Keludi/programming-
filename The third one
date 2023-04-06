@@ -1,0 +1,42 @@
+/*Chapter 3 -each topic demonstration
+1- One-way if statement 
+2 - two-way if-else statement 
+3 - nested if statement */
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int x = 67, y = 98;
+	//one-way if statement
+	if (x < y)
+	{
+		cout << x << " Is less than " << y <<endl;
+	}
+	//two-way of if else statement
+	if (x > y)
+	{
+		cout << x << " Doesn't not equal " << y;
+	}
+	else
+	{
+		cout << x << " Is equal to " << x<<endl;
+	}
+	//nested if statement
+	if (x > 0)
+	{
+		cout << y << " Is postive" << endl;
+		if (x % 2 == 0)
+		{
+			cout << x << " Is even" << endl;
+		}
+			else
+			{
+				cout << x << " Is odd" << endl;
+			}
+		}
+	else
+	{
+		cout << x << " Is odd" << endl;
+	}
+}
